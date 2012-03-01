@@ -2,12 +2,14 @@
 
   var Logo = this.Logo = {};
 
-  Logo.syntax = {
-    end: 0, // "end" is a reserved word
+  Logo.syntax = function () {
+    return {
+      end: 0, // "end" is a reserved word
+    };
   };
 
   Logo.interpret = function (input) {
-    var context = { level: 0, syntax: Logo.syntax },
+    var context = { level: 0, syntax: Logo.syntax() },
         tokens = input.trim().toLowerCase().split(/\s+/),
         ast = parse(tokens, context);
     if (typeof ast === 'function') {
