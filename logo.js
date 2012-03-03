@@ -152,8 +152,10 @@
       while (order(tokens[0]) >= order(op)) {
         rhs = Logo.eval(rhs, tokens, order(tokens[0]));
       }
-      var tmp = apply(op, valueOf(lhs, context), valueOf(rhs, context));
-      lhs = tmp;
+      lhs = apply(op, valueOf(lhs, context), valueOf(rhs, context));
+    }
+    if (typeof lhs === 'string' && Logo.isNumeric(lhs)) {
+      lhs = parseFloat(lhs);
     }
     return lhs;
   };
