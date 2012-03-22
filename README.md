@@ -33,11 +33,8 @@ The interpreter understands the following keywords:
   <dd>Repeat <var>instructions</var> <var>x</var> times</dd>
   <dt><code>to <var>verb</var> <var>parameters</var> <var>instructions</var> end</code></dt>
   <dd>Defines the function <var>verb</var>, optionally taking <var>parameters</var> listed in the form <code>:x</code>, so that you can subsequently write <code><var>verb</var></code> and <var>instructions</var> will be performed</dd>
-  <dd>Eg: ```logo
-to square :x repeat 4 right 90 forward :x end
-square 20
-```
-  </dd>
+  <dd>Eg: <pre>to square :x repeat 4 right 90 forward :x end
+square 20</pre></dd>
   <dt><code>if <var>expression</var> [ <var>instructions</var> ]</code></dt>
   <dd>Performs <var>instructions</var> if <var>expression</var> evaluates to true</dd>
 </dl>
