@@ -47,4 +47,4 @@ Because turtles are aquatic. Artistic tortoises make more sense to me.
 
 ## It doesn't work ##
 
-Yeah, I've only tested it in Chrome so far. It's a work in progress.
+Yeah, I've only tested it in Chrome, Firefox 7 and Safari 5 so far. It's a work in progress.
