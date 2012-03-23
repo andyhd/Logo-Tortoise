@@ -44,3 +44,7 @@ Currently, expressions are only accepted by the `if` keyword, so you can't do `f
 ## Why are you calling it a tortoise? ##
 
 Because turtles are aquatic. Artistic tortoises make more sense to me.
+
+## It doesn't work ##
+
+Yeah, I've only tested it in Chrome so far. It's a work in progress.
