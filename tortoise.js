@@ -11,12 +11,14 @@ var tortoise = function (element) {
       return function () { pendown = false; };
     }
   };
+  Logo.syntax.pu = Logo.syntax.penup;
 
   Logo.syntax.pendown = {
     f: function (args, context) {
       return function () { pendown = true; };
     }
   };
+  Logo.syntax.pd = Logo.syntax.pendown;
 
   Logo.syntax.forward = {
     params: ['distance'],
@@ -38,6 +40,7 @@ var tortoise = function (element) {
       };
     }
   };
+  Logo.syntax.fd = Logo.syntax.forward;
 
   function turn(value, direction, context) {
     var degrees = Logo.valueOf(value, context);
@@ -58,6 +61,7 @@ var tortoise = function (element) {
       return turn(args.degrees, "left", context);
     }
   };
+  Logo.syntax.lt = Logo.syntax.left;
 
   Logo.syntax.right = {
     params: ['degrees'],
@@ -65,6 +69,7 @@ var tortoise = function (element) {
       return turn(args.degrees, "right", context);
     }
   };
+  Logo.syntax.rt = Logo.syntax.right;
 
   function drawTortoise() {
     c.strokeStyle = 'rgba(0,239,0,1)';
